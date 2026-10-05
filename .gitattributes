@@ -1,0 +1,8 @@
+* text=auto
+*.cmd text eol=crlf
+*.java text eol=lf
+*.md text eol=lf
+*.class binary
+*.jar binary
+*.png binary
+*.pkl binary
