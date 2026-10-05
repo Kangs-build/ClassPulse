@@ -1,0 +1,1 @@
+Browser checked: student activation roster profile, simulated email inbox and expiry notice; administrator sign-in, teacher/student rosters and populated teacher approval edit form. No browser console errors. Screenshots are in preview/.

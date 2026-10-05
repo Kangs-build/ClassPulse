@@ -1,0 +1,121 @@
+Compiled successfully for Java 17 or newer.
+Database schema ready.
+College demo ready. Administrator: admin@college.example / AdminDemo123!
+PASS verification resend cooldown
+PASS verification expires after five minutes
+PASS wrong code attempt 1
+PASS wrong code attempt 2
+PASS wrong code attempt 3
+PASS wrong code attempt 4
+PASS wrong code attempt 5
+PASS five wrong codes invalidate challenge
+PASS non-college domain rejected (got 400)
+PASS unlisted college email rejected (got 403)
+PASS missing role rejected (got 400)
+PASS unapproved faculty cannot activate (got 403)
+PASS unverified student cannot login (got 403)
+PASS legacy student registration bypass closed (got 400)
+PASS legacy faculty registration bypass closed (got 400)
+PASS /api/auth/start succeeds
+PASS verification response contains no code
+PASS /api/demo/inbox succeeds
+PASS roster identity tampering rejected (got 400)
+PASS wrong verification code rejected (got 400)
+PASS /api/auth/complete succeeds
+PASS used code cannot be replayed (got 400)
+PASS /api/student/login succeeds
+PASS authoritative student identity and case-insensitive email
+PASS incorrect ClassPulse password rejected (got 401)
+PASS activated account cannot overwrite password by enrollment (got 409)
+PASS student cannot administer faculty (got 403)
+PASS anonymous roster access blocked (got 401)
+PASS wrong administrator password blocked (got 401)
+PASS /api/admin/login succeeds
+PASS approval requires section assignment (got 400)
+PASS /api/admin/teachers succeeds
+PASS /api/auth/start succeeds
+PASS verification response contains no code
+PASS /api/demo/inbox succeeds
+PASS roster identity tampering rejected (got 400)
+PASS wrong verification code rejected (got 400)
+PASS /api/auth/complete succeeds
+PASS used code cannot be replayed (got 400)
+PASS teacher cannot access administrator roster (got 403)
+PASS /api/teacher/pending succeeds
+PASS pending doubts scoped to assigned section
+PASS teacher cannot resolve another section (got 403)
+PASS teacher cannot publish another section (got 403)
+PASS teacher cannot publish resolved doubt from another section (got 403)
+PASS /api/teacher/unpublished succeeds
+PASS unpublished resolutions exclude other sections
+PASS private attachments blocked for unassigned teacher (got 403)
+PASS private attachments blocked for other students (got 403)
+PASS teacher cannot read other section peer answers (got 403)
+PASS student cannot read other section peer answers (got 403)
+PASS /api/teacher/report succeeds
+PASS report excludes unassigned section
+PASS /api/auth/start succeeds
+PASS verification response contains no code
+PASS /api/demo/inbox succeeds
+PASS roster identity tampering rejected (got 400)
+PASS wrong verification code rejected (got 400)
+PASS /api/auth/complete succeeds
+PASS used code cannot be replayed (got 400)
+PASS /api/student/pulse succeeds
+PASS /api/download?file=scope-test-088b8868-6469-4390-99d5-9bb6a3cf807e.pdf succeeds
+PASS private attachment available to its question author
+PASS /api/teacher/pulse succeeds
+PASS confusion meter excludes unassigned section
+PASS /api/student/doubt succeeds
+PASS off-topic chat still blocked
+PASS /api/student/doubt succeeds
+PASS academic question posts successfully
+PASS /api/auth/start succeeds
+PASS verification response contains no code
+PASS /api/demo/inbox succeeds
+PASS roster identity tampering rejected (got 400)
+PASS wrong verification code rejected (got 400)
+PASS /api/auth/complete succeeds
+PASS used code cannot be replayed (got 400)
+PASS /api/student/upvote succeeds
+PASS classmate can support question
+PASS /api/student/upvote succeeds
+PASS duplicate vote rejected
+PASS /api/teacher/resolve succeeds
+PASS assigned teacher can resolve academic doubt
+PASS /api/teacher/unpublished succeeds
+PASS resolved question available for assigned teacher publication
+PASS /api/teacher/publish succeeds
+PASS /api/archive succeeds
+PASS published FAQ publicly visible
+PASS /api/admin/teachers succeeds
+PASS /api/teacher/pending succeeds
+PASS assignment change affects existing session immediately
+PASS /api/admin/teachers succeeds
+PASS revoked approval invalidates existing session (got 401)
+PASS revoked teacher cannot login again (got 403)
+PASS /api/admin/students succeeds
+PASS /api/admin/students succeeds
+PASS administrator can extend approved student roster
+PASS student email cannot be reassigned to teacher role (got 409)
+PASS /api/student/login succeeds
+PASS /api/user/password succeeds
+PASS password change revokes other sessions (got 401)
+PASS /api/student/mydoubts succeeds
+PASS /api/student/login succeeds
+PASS /api/logout succeeds
+PASS logout revokes token (got 401)
+PASS /api/config succeeds
+PASS normal mode not demo
+PASS normal mode disables demo inbox (got 404)
+PASS unconfigured real email cannot pretend to verify (got 503)
+PASS: 108 checks. Isolated test logs: [local verification path omitted]
+ACADEMIC POLICY RESULTS: 52 passed, 0 failed
+PASS HTML injection escaped
+PASS Attribute apostrophes escaped
+PASS Literal search highlights safely
+PASS Search cannot introduce executable tags
+PASS Highlight does not split HTML entities
+PASS Quotes and newlines roundtrip in peer approval
+PASS Concurrent expired requests show one notification
+FRONTEND RESULTS: 7 passed, 0 failed
